@@ -79,6 +79,30 @@ app.get('/family', async function(request, response) {
   }
 });
 
+
+
+let leeslijst = [];
+
+app.get('/leeslijst', function(request, response) {
+    // Fetchen van items van externe API
+    fetchJson('https://fdnd-agency.directus.app/items/oba_item')
+    .then((itemsDataUitDeAPI) => {
+        // Toevoegen van items aan leeslijst
+        const data = itemsDataUitDeAPI.data;
+        const filteredResponse = data.filter(obj => leeslijst.includes(obj.id));
+
+        console.log(leeslijst)
+        // Stuur leeslijst terug als reactie
+        response.render('leeslijst', {items: filteredResponse})
+    })
+    .catch(error => {
+        console.error('Fout bij het ophalen van items van API:', error);
+        response.status(500).send('Internal Server Error');
+    });
+});
+
+
+
 app.get('/detail/:id', function(request, response) {
     fetchJson(apiItem + '?filter={"id":' + request.params.id + '}').then((itemsDataUitDeAPI) => {
         response.render('detail', {items: itemsDataUitDeAPI.data})
@@ -98,34 +122,16 @@ app.post("/comments", function(request, response) {
 
 
 
-let leeslijst = [];
 
-app.get('/leeslijst', function(request, response) {
-    // Fetchen van items van externe API
-    fetchJson('https://fdnd-agency.directus.app/items/oba_item')
-    .then((itemsDataUitDeAPI) => {
-        // Toevoegen van items aan leeslijst
-        leeslijst = itemsDataUitDeAPI.data;
-      
-        console.log(leeslijst)
-        // Stuur leeslijst terug als reactie
-        response.status(200).json({ data: leeslijst });
-    })
-    .catch(error => {
-        console.error('Fout bij het ophalen van items van API:', error);
-        response.status(500).send('Internal Server Error');
-    });
-});
 
 
 
 // Endpoint om een item toe te voegen aan de leeslijst
 app.post('/add-to-leeslijst', (req, res) => {
-    const newItem = req.body;
+    const id = parseInt(req.body["bookId"])
 
-    console.log(newItem)
     // Voeg nieuw item toe aan de leeslijst
-    leeslijst.push(newItem);
+    leeslijst.push(id);
 
     // Stuur een reactie terug
     res.status(201).json({ message: 'Item succesvol toegevoegd aan leeslijst' });

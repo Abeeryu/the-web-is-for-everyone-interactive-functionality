@@ -98,8 +98,6 @@ commentsForm.addEventListener("submit", (event) =>{
 // });
 
 
-// const addBtn = document.getElementById("add-btn");
-// addBtn.addEventListener("click", addToLeeslijst);
 
 function addToLeeslijst(id) {
 
