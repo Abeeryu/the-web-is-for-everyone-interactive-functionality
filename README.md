@@ -47,6 +47,14 @@ We hebben eerste een index gemaakt waar alle gebruikers vind. Hier kan je een ge
 Ik heb gewerkt met CSS, javascript, EJS, Express en Node JS. We hebben de data uit directus cms gehaald, bijvoorbeeld de items en gebruikers. Ik was veel bezig geweest met de server.js sinds ik daar moeite mee heb. Ik heb dit keer ook aan de styling van mijn website gewerkt.
 We hebben ook over Progressive Enhancment geleerd. Het is een (coding) strategy waarmee je er voor kan zorgen dat je website het altijd doet.
 
+Wat heb ik gedaan:
+
+1. Ten eerste heb ik de html toegevoegd.
+
+2. Daarna heb ik de CSS toegevoegd om styling te geven.
+
+3. Als laatste heb ik JS (enhancement) gebruikt om de functies die ik heb gemaakt te laten werken.
+
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 
