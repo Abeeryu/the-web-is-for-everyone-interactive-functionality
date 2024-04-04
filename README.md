@@ -17,17 +17,45 @@
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
+We gaan voor een opdrachtgever Ontwerpen en maken een interactieve toepassing die voor iedereen toegankelijk is.
+De userstories die ik heb gekozen:
+
+1. Als gebruiker wil ik recensies achter kunnen laten.
+
+2. Als OBA lid wil ik tijdens het zoeken boeken kunnen bewaren in een lijst, zodat ik deze later kan bekijken.
+Dit is de detail pagina die ik heb gemaakt met een knop die naar de leeslijst kan een boek toevoegen.
+
+![Screenshot 2024-04-04 015804](https://github.com/Abeeryu/the-web-is-for-everyone-interactive-functionality/assets/144008500/256653c0-d6f6-424b-8d69-cb0352e0782c)
+
+![Screenshot 2024-04-04 015841](https://github.com/Abeeryu/the-web-is-for-everyone-interactive-functionality/assets/144008500/f728d088-7b77-4889-af85-0007e6df5563)
+
+De user kan ook een recensies achter kunnen laten.
+
+![Screenshot 2024-04-04 015813](https://github.com/Abeeryu/the-web-is-for-everyone-interactive-functionality/assets/144008500/5349cd40-df39-4ec2-b45b-06823305b395)
+
+![Screenshot 2024-04-04 020139](https://github.com/Abeeryu/the-web-is-for-everyone-interactive-functionality/assets/144008500/61f489e9-d3f4-447d-92bb-4124727b531e)
+
 ## Gebruik
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
 
+We hebben eerste een index gemaakt waar alle gebruikers vind. Hier kan je een gebruiker kiezen en daarna opent de library met alle boeken cd's en activiteiten, als je op een boek klikt, dan ga je naar de detail pagina. Daar kan je alle info van de boeke lezen, ook kan je die boek naar jouw lijsten toevoegen. Ik heb ook een recensies box gemaakt om een comments achter te kunnen laten.
+
+
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+
+Ik heb gewerkt met CSS, javascript, EJS, Express en Node JS. We hebben de data uit directus cms gehaald, bijvoorbeeld de items en gebruikers. Ik was veel bezig geweest met de server.js sinds ik daar moeite mee heb. Ik heb dit keer ook aan de styling van mijn website gewerkt.
+We hebben ook over Progressive Enhancment geleerd. Het is een (coding) strategy waarmee je er voor kan zorgen dat je website het altijd doet.
 
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 
 
 ## Bronnen
+
+Backlog: https://github.com/users/Abeeryu/projects/2/views/1
+
+Directus: https://fdnd-agency.directus.app/admin/content/oba_profile
 
 ## Licentie
 
