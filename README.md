@@ -50,6 +50,10 @@ We hebben ook over Progressive Enhancment geleerd. Het is een (coding) strategy 
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 
+1. Repliceer de code. Klik op de groene codeknop en kloon het of download de zip.
+2. Als je Node hebt geïnstalleerd, open je de terminal. Je vindt de terminalknop bovenaan of klik op Ctrl + `.
+3. Typ vervolgens npm start of npm run dev om de server te starten.
+4. Om de server te sluiten, druk je op Ctrl + C in de terminal.
 
 ## Bronnen
 
