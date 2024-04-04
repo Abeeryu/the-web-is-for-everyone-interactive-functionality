@@ -1,44 +1,58 @@
 
 /* Profielen family pagina */
 
-.container {
-    display: flex;
+/* .container {
+    /* display: flex;
     justify-content: center; 
     align-items: center; 
     height: 100vh; 
-    margin: 0; 
-  }
+    margin: 0; */
 
-.profiel-container {
+/* .profiel-container {
     display: inline-block;
     cursor: pointer;
-    padding: 1em;
-}
+    padding: 1em; */
+    /* width: 150px;
+} */
   
 .profiel-container h2 {
     margin-bottom: 1em;
     color: black;
+    padding-left: 20px;
 }
   
 .profiel-container img {
     max-width: 100px;
     object-fit: cover;
+    padding-bottom: 10px;
 }
 
 .profiel-container a {
     text-decoration: none;
 }
 
+@media screen and (min-width: 375px) {
+    /* Profielen family pagina */
+    .container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        margin: 0; 
+    }
+
+    .profiel-container {
+        display: inline-block;
+        cursor: pointer;
+        padding: 1em;
+    }
+}
+
 /* Carrousel pagina index */
 
-.carrousel {
-    display: flex;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-    justify-content: space-between;
-    border-style: solid;
-    border-width: medium;
-}
+/* .carrousel {
+    display: none;
+} */
 
 .carrousel-details {
     padding-top: 20px;
@@ -52,9 +66,10 @@
 
 .carrousel img {
     width: 275px;
-    height: 300;
+    height: 400px;
     object-fit: cover;
     object-position: top center;
+    padding-right: 20px;
 }
 
 .carrousel a {
@@ -76,6 +91,47 @@ a:hover {
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 10px;
+}
+
+
+/* Media Query for devices with a minimum width of 375px */
+@media screen and (min-width: 375px) {
+    /* Carrousel pagina index */
+    .carrousel { 
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        justify-content: space-between;
+        border-style: solid;
+        border-width: medium;
+    }
+
+    .carrousel-details {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .carrousel-details h3 {
+        padding-bottom: 20px;
+    }
+
+    .carrousel img {
+        width: 275px;
+        height: 400px;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    .carrousel a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    a:hover {
+        background-color: rgb(234, 200, 76);
+    }
 }
 
 /* .zoeken {
@@ -274,7 +330,7 @@ button:active {
 }
 
 .line {
-    border-color: #000; /* Change color as needed */
+    border-color: #000;
 }
 
 .leeslijst h2 {
